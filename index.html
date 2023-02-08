@@ -23,6 +23,8 @@
 <body>
 
 	<div class="wrapper">
+
+		<!-- 頁首、導覽 -->
 		<header class="wrapper-item">
 			<div class="header">
 				<div class="header-head">
@@ -109,8 +111,125 @@
 				</div>
 			</div>
 		</header>
-		<section class="wrapper-item">wrapper-item</section>
-		<section class="wrapper-item">wrapper-item</section>
+
+		<!-- 橫幅 -->
+		<section class="wrapper-item">
+			<div class="banner">
+				<div class="banner-head">
+					<ul class="banner-ul">
+						<li class="banner-li">
+							<a href="./products-list.html">
+								<picture>
+									<source srcset="./images/banner1-desktop.jpg" media="(min-width: 481px)">
+									<source srcset="./images/banner1-mobile.jpg" media="(max-width: 480px)">
+									<img class="banner-img" src="./images/banner1-desktop.jpg" width="1104" height="436" alt="咖啡 coffee">
+								</picture>
+							</a>
+						</li>
+						<li class="banner-li">
+							<a href="./products-list.html">
+								<picture>
+									<source srcset="./images/banner2-desktop.jpg" media="(min-width: 481px)">
+									<source srcset="./images/banner2-mobile.jpg" media="(max-width: 480px)">
+									<img class="banner-img" src="./images/banner2-desktop.jpg" width="1104" height="436" alt="蛋糕 cake">
+								</picture>
+							</a>
+						</li>
+						<li class="banner-li">
+							<a href="./products-list.html">
+								<picture>
+									<source srcset="./images/banner3-desktop.jpg" media="(min-width: 481px)">
+									<source srcset="./images/banner3-mobile.jpg" media="(max-width: 480px)">
+									<img class="banner-img" src="./images/banner3-desktop.jpg" width="1104" height="436" alt="烘焙 bread">
+								</picture>
+							</a>
+						</li>
+						<li class="banner-li">
+							<a href="./products-list.html">
+								<picture>
+									<source srcset="./images/banner4-desktop.jpg" media="(min-width: 481px)">
+									<source srcset="./images/banner4-mobile.jpg" media="(max-width: 480px)">
+									<img class="banner-img" src="./images/banner4-desktop.jpg" width="1104" height="436" alt="伴手禮 gift">
+								</picture>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="banner-body">
+					<input class="banner-btn banner-btn-active" type="button" value="1">
+					<input class="banner-btn" type="button" value="2">
+					<input class="banner-btn" type="button" value="3">
+					<input class="banner-btn" type="button" value="4">
+				</div>
+			</div>
+		</section>
+
+		<!-- 分類商品 -->
+		<section class="wrapper-item">
+			<div class="col col-row">
+				<div class="col-item col-item-3">
+					<div class="category">
+						<div class="category-head">
+							<h3 class="category-title">
+								<span class="category-cht">咖啡</span>
+								<small class="category-en">coffee</small>
+							</h3>
+						</div>
+						<div class="category-body">
+							<div class="category-imgs">
+								<img src="./images/category-coffee.png" alt="咖啡 coffee">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-item col-item-3">
+					<div class="category">
+						<div class="category-head">
+							<h3 class="category-title">
+								<span class="category-cht">咖啡</span>
+								<small class="category-en">coffee</small>
+							</h3>
+						</div>
+						<div class="category-body">
+							<div class="category-imgs">
+								<img src="./images/category-coffee.png" alt="咖啡 coffee">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-item col-item-3">
+					<div class="category">
+						<div class="category-head">
+							<h3 class="category-title">
+								<span class="category-cht">咖啡</span>
+								<small class="category-en">coffee</small>
+							</h3>
+						</div>
+						<div class="category-body">
+							<div class="category-imgs">
+								<img src="./images/category-coffee.png" alt="咖啡 coffee">
+							</div>
+						</div>
+					</div>					
+				</div>
+				<div class="col-item col-item-3">
+					<div class="category">
+						<div class="category-head">
+							<h3 class="category-title">
+								<span class="category-cht">咖啡</span>
+								<small class="category-en">coffee</small>
+							</h3>
+						</div>
+						<div class="category-body">
+							<div class="category-imgs">
+								<img src="./images/category-coffee.png" alt="咖啡 coffee">
+							</div>
+						</div>
+					</div>					
+				</div>
+			</div>
+		</section>
+
 		<section class="wrapper-item">wrapper-item		</section>
 		<section class="wrapper-item wrapper-item-other">wrapper-item</section>
 	</div>
@@ -118,6 +237,15 @@
 	<footer class="footer">
 		<p class="footer-desc">Copyright © 2023 Drink Coffee Corporation. All rights reserved.</p>
 	</footer>
+
+	<script>
+		let num = 0;
+		for (let i = 1; i <= 12; i++) {
+			num = 100/12*i;
+			// console.log(i);
+			console.log(i, num);
+		}
+	</script>
 
 </body>
 
