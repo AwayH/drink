@@ -109,6 +109,15 @@ img {
   white-space: nowrap;
 }
 
+.nav-li-active > .nav-link {
+  background-color: #cd8c96;
+}
+
+.nav-li-active > .nav-link > .nav-cht,
+.nav-li-active > .nav-link > .nav-en {
+  color: #fff;
+}
+
 /* 格線系統 ------------------------------ */
 .col {
   display: flex;
@@ -297,4 +306,138 @@ img {
 
 .contact-icon:hover {
   opacity: .7;
+} 
+
+.contact-li {
+  display: flex;
+}
+
+.contact-li + li {
+  margin-top: 1rem;
+}
+
+.contact-link {
+  color: #bc938d;
+  text-decoration: none;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}
+
+.contact-child-ul {
+  border-left: solid 1px #ccc;
+  padding-left: .5rem;
+  margin-left: .5rem;
+}
+
+.contact-child-li {
+  display: inline-block;
+}
+
+.contact-service {
+  text-align: center;
+}
+
+.contact-tel {
+  font-size: 2.5rem;
+  color: #eddedc;
+}
+
+/* Footer ----------------------------------- */
+
+.footer {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #bc938d;
+}
+
+/* SubNav ---------------------------------- */
+
+.subnav-li + .subnav-li {
+  border-top: solid 1px #f2e4e2;
+  margin-top: .7rem;
+  padding-top: .7rem;
+}
+
+.subnav-link {
+  text-decoration: none;
+  display: block;
+  padding: .7rem;
+}
+
+.subnav-link:hover {
+  background-color: #cd8c96;
+}
+
+.subnav-link:hover .subnav-cht,
+.subnav-link:hover .subnav-en {
+  color: #fff;
+}
+
+.subnav-cht {
+  color: #cd8c96;
+}
+
+.subnav-en {
+  color: #999;
+  font-size: .9rem;
+  text-transform: capitalize;
+}
+
+.subnav-li-active > .subnav-link {
+  background-color: #cd8c96;
+}
+
+.subnav-li-active > .subnav-link > .subnav-cht,
+.subnav-li-active > .subnav-link > .subnav-en {
+  color: #fff;
+}
+
+/* Breadcrumb ------------------------------ */
+.breadcrumb {
+  margin-bottom: 1rem;
+}
+
+.breadcrumb-item {
+  font-size: .9rem;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: '/';
+  margin-right: .4rem;
+  color: #ccc;
+  font-size: 1rem;
+  vertical-align: middle;
+}
+
+.breadcrumb-link {
+  text-decoration: none;
+  color: #cd8c96;
+}
+
+.breadcrumb-link:hover {
+  text-decoration: underline;
+}
+
+/* Content -------------------- */
+
+.content-head {
+  margin-bottom: 2rem;
+}
+
+/* Headline ----------------------- */
+
+.headline {
+  padding: .7rem 1rem;
+  background-color: #bc938d;
+}
+.headline-cht {
+  color: #fff;
+  font-size: 1.5rem;
+}
+.headline-en {
+  color: rgba(255 255 255 / 50%);
+  text-transform: capitalize;
 }
