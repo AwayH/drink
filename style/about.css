@@ -60,9 +60,19 @@
 
 /* Article ---------------------------------- */
 
-.article-title-lg {
+.article-title-lg,
+.article-title-sm,
+.article-quote {
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.article-title-sm {
+  font-size: 1.1rem;
+  list-style-type: square;
+  margin-left: 1.2rem;
+  display: list-item;
+  color: rgba(0,0,0,.5);
 }
 
 .article-quote {
@@ -101,3 +111,45 @@
   margin-left: 1.2rem;
   margin-top: 1rem;
 }
+
+/* Details ----------------------------------- */
+
+.details {}
+
+.detail {
+}
+
+.detail-head {
+  display: block;
+  line-height: 1.8;
+  cursor: pointer;
+}
+
+.detail-body {
+  padding-top: .5rem;
+  border-top: 1px solid rgba(0,0,0,.1);
+}
+
+.detail-title {
+  display: inline-block;
+  font-size: 1.5rem;
+  color: #ff8f00;
+}
+
+.detail-date {
+  color: rgba(0, 0, 0, .5);
+  margin-left: 1rem;
+}
+
+.detail-desc {
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.detail-img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
